@@ -1,5 +1,7 @@
 # PdeSolver
 
+[![Docs](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://beginnersc.github.io/PdeSolver/)
+
 A .NET library for solving 1D parabolic partial differential equations using the Crank-Nicolson finite difference method.
 
 ## PDE Form
