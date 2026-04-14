@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["src/**/*.csproj"],
+          "src": "."
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": ["api/**.yml", "api/index.md"]
+      },
+      {
+        "files": ["docs/**.md", "docs/**/toc.yml", "toc.yml", "*.md"]
+      }
+    ],
+    "resource": [
+      {
+        "files": ["images/**"]
+      }
+    ],
+    "output": "_site",
+    "globalMetadata": {
+      "_appTitle": "PdeSolver",
+      "_appFooter": "PdeSolver — 1D Finite Difference PDE Solver",
+      "_enableSearch": true
+    },
+    "template": ["default", "modern"]
+  }
+}

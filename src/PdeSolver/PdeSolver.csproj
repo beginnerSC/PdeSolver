@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- NuGet package metadata -->
+    <PackageId>PdeSolver</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>beginnerSC</Authors>
+    <Description>A 1D finite difference PDE solver using the Crank-Nicolson method. Solves parabolic PDEs of the form u_t = a(t,x)u_xx + b(t,x)u_x + c(t,x)u + f(t,x).</Description>
+    <PackageTags>pde;finite-difference;crank-nicolson;numerical-methods;solver</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/beginnerSC/PdeSolver</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
